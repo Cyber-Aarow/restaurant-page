@@ -52,4 +52,5 @@ button {
 .words {
     background-color: rgb(102, 15, 0);
     color: goldenrod;
+    padding: 3vh 2vh 5vh;
 }
