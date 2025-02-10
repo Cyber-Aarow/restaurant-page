@@ -5,6 +5,7 @@
     text-decoration: none;
     list-style-type: none;
     border: none;
+    cursor: default;
 }
 body {
     background-color: black;
@@ -14,6 +15,9 @@ header {
     background-color: black;
     color: white;
     padding: 1vh;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 button {
@@ -22,7 +26,10 @@ button {
     border: 0.05vh solid gray;
     padding: 1vh;
     font-size: 1rem;
+    cursor: crosshair;
 }
+
+/* Home */
 
 .title {
     background-color: rgb(102, 15, 0);
@@ -55,4 +62,54 @@ button {
     background-color: rgb(102, 15, 0);
     color: goldenrod;
     padding: 3vh 2vh 5vh;
+}
+
+/* Menu */
+
+.menu-holder {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu-sides {
+    max-width: 100%;
+    height: auto;
+}
+
+.menu-sides img {
+    object-fit: contain;
+}
+
+.menu {
+    background-color: black;
+    color: rgb(180, 129, 0);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.entree {
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(102, 15, 0);
+}
+
+.entree div {
+    width: 40%;
+}
+
+.entree p, h2 {
+    text-align: center;
+}
+
+.menu img {
+    width: 40vh;
+    height: auto;
+    border: 5px solid rgb(54, 5, 5);
 }
