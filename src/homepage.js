@@ -28,5 +28,6 @@ export const Display_HomePage = () =>{
 
     word_div.appendChild(p1);
     word_div.appendChild(p2);
+    word_div.classList.add('words');
     body.appendChild(word_div);
 };

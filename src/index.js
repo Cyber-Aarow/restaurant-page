@@ -1,2 +1,4 @@
 import './main.css';
-console.log("Poop.");
+import { Display_HomePage } from './homepage';
+
+Display_HomePage();
