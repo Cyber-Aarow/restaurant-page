@@ -4,7 +4,7 @@ import meatballsImage from './images/big_meatballs.avif';
 import lasagnaImage from './images/lasagna.jpeg';
 import penneImage from './images/penne.avif';
 import farfalleImage from './images/farfalle.avif';
-import burgerImage from './images/burger.jpeg';
+import hamburgerImage from './images/burger.jpeg';
 
 export const Display_MenuPage = () =>{
     let menu_holder = document.createElement('div');
@@ -15,6 +15,9 @@ export const Display_MenuPage = () =>{
     let right_image = document.createElement('img');
     right_image.src = rightImage;
     let menu_div = document.createElement('div');
+    left_image.classList.add('menu-sides');
+    right_image.classList.add('menu-sides');
+    menu_div.classList.add('menu');
 
     let meatballs_entree = document.createElement('div');
     let lasagna_entree = document.createElement('div');
