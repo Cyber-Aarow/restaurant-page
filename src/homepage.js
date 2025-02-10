@@ -1,7 +1,7 @@
 import spaghettiImage from './images/fancy_spaghetti.avif'
 
 export const Display_HomePage = () =>{
-    let body = document.querySelector('body');
+    let content = document.querySelector('#content');
 
     let title_div = document.createElement('div');
     let restaurant_name = document.createElement('h1');
@@ -9,7 +9,7 @@ export const Display_HomePage = () =>{
     restaurant_name.innerHTML = 'Pinnacle Pasta';
     title_div.appendChild(restaurant_name);
     title_div.classList.add('title');
-    body.appendChild(title_div);
+    content.appendChild(title_div);
 
     let image_div = document.createElement('div');
     let home_image = document.createElement('img');
@@ -17,7 +17,7 @@ export const Display_HomePage = () =>{
     home_image.src = spaghettiImage;
     image_div.appendChild(home_image);
     image_div.classList.add('image-holder');
-    body.appendChild(image_div);
+    content.appendChild(image_div);
 
     let word_div = document.createElement('div');
     let p1 = document.createElement('p');
@@ -29,5 +29,5 @@ export const Display_HomePage = () =>{
     word_div.appendChild(p1);
     word_div.appendChild(p2);
     word_div.classList.add('words');
-    body.appendChild(word_div);
+    content.appendChild(word_div);
 };
