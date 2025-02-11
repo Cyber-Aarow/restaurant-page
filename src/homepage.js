@@ -1,4 +1,4 @@
-import spaghettiImage from './images/fancy_spaghetti.avif'
+import spaghettiImage from './images/fancy_spaghetti.jpg'
 
 export const Display_HomePage = () =>{
     let content = document.querySelector('#content');

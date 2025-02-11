@@ -43,6 +43,7 @@ button {
        2px  2px 0 black;
 
     padding-left: 2vh;
+    margin-bottom: 1vh;
 }
 
 .image-holder {
@@ -50,6 +51,7 @@ button {
     display: flex;
     justify-content: center;
     overflow: hidden;
+    height: 67vh;
 }
 
 .image-holder img {
@@ -62,6 +64,7 @@ button {
     background-color: rgb(102, 15, 0);
     color: goldenrod;
     padding: 3vh 2vh 5vh;
+    margin-top: 1vh;
 }
 
 /* Menu */
